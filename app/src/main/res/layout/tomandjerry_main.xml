@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Activities.TomAndJerry_Activity">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="0.4"
+
+        android:src="@drawable/img_back"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_logored" />
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/returnButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/qqer"
+            android:src="@drawable/ic_returnbutton" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/TomAndJerry_cheeseLifeScale"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/logo"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/TomAndJerry_bars"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/logo"
+                android:layout_weight="40"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/TomAndJerry_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/logo"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/TomAndJerry_scoreText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center_vertical"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:text="@string/score"
+                        android:shadowRadius="7"
+                        android:textSize="20sp"
+                        android:textAlignment="gravity"
+                        android:textColor="#D5C92F"
+                        android:textStyle="bold" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/TomAndJerry_scoreNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center_vertical"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        tools:text="hello"
+                        android:shadowRadius="7"
+                        android:textAlignment="gravity"
+                        android:textColor="#D5C92F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/TomAndJerry_Odometer"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/logo"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/TomAndJerry_OdometerText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center_vertical"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:text="@string/meters"
+                        android:shadowRadius="2"
+                        android:textAlignment="gravity"
+                        android:textColor="#EC171F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/TomAndJerry_OdometerNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center_vertical"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        tools:text="hello"
+                        android:shadowRadius="2"
+                        android:textAlignment="gravity"
+                        android:textColor="#EC171F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/TomAndJerry_cheeseLifeScale_cheese1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cheese" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/TomAndJerry_cheeseLifeScale_cheese2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cheese" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/TomAndJerry_cheeseLifeScale_cheese3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cheese" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/TomAndJerry_Grid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/TomAndJerry_Grid_Col0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col0_row0"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_tom" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col0_row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_jerry" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col0_row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col0_row3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col0_row4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col0_row5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col0_row6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/TomAndJerry_Grid_Col1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col1_row0"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col1_row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col1_row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_tomevil" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col1_row3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col1_row4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col1_row5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col1_row6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/TomAndJerry_Col2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col2_row0"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col2_row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col2_row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col2_row3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col2_row4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col2_row5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col2_row6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/TomAndJerry_Grid_Col3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/TomAndJerry_Grid_col3_row0"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cheese" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/TomAndJerry_Grid_col3_row1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cheese" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/TomAndJerry_Grid_col3_row2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_tomevil" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/TomAndJerry_Grid_col3_row3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cheese" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/TomAndJerry_Grid_col3_row4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cheese" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/TomAndJerry_Grid_col3_row5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cheese" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/TomAndJerry_Grid_col3_row6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cheese" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/TomAndJerry_Grid_Col4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col4_row0"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col4_row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col4_row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_tomevil" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col4_row3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col4_row4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col4_row5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/TomAndJerry_Grid_col4_row6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cheese" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/TomAndJerry_Buttons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/TomAndJerry_LeftButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/left_button"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_left_button" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/TomAndJerry_RightButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/right_button"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_right_button" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>
