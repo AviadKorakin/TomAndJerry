@@ -15,4 +15,5 @@
     <string name="meters">Meters:</string>
     <string name="score">Score:</string>
     <string name="title_activity_maps">Maps_Activity</string>
+    <string name="title_activity_maps_alt">MapsAlt_Activity</string>
 </resources>

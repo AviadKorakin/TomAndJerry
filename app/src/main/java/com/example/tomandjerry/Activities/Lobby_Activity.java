@@ -62,12 +62,13 @@ public class Lobby_Activity extends AppCompatActivity {
         TomAndJerry_LaunchGame.setOnClickListener(v -> launchGame());
         TomAndJerry_Scoreboard.setOnClickListener(v -> scoreboard());
     }
-
     private void scoreboard() {
-        Intent i = new Intent(getApplicationContext(), ScoreBoard_Activity.class);
+    Intent i = new Intent(getApplicationContext(), MapsAlt_Activity.class);
+       // Intent i = new Intent(getApplicationContext(), ScoreBoard_Activity.class);
         startActivity(i);
         finish();
     }
+
 
     private void launchGame() {
        if(testPicks())
